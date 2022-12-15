@@ -1,22 +1,22 @@
-import React, { useState } from 'react'
+import React,{useState} from 'react'
 import '../styles/App.css';
 const App = () => {
-  const [data, setData] = useState("");
-  const handleChange = (event) => {
-    setData(event.target.value)
+  const[data,setData]=useState("");
+const handleChange = (event)=> { 
+setData(event.target.value)
 
-  }
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("form submitted")
-  }
+}
+ const handleSubmit =(event) => {
+  event.preventDefault();
+  console.log("form submitted")
+ }
 
 
   return (
     <div id="main">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit ={handleSubmit}>
         <label htmlFor='name'>Name</label>
-        <input id="name" type={"text"} value={data} onChange={handleChange} />
+        <input id="name" type={"text"}  value ={ data } onChange = {handleChange}/>
 
         <br />
         <br />
